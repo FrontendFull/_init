@@ -1,0 +1,86 @@
+body {
+  line-height: 1.25;
+  font-size: $body-font-size + px;
+  font-family: $font-family;
+  color: $text-color;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  .wrapper {
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
+
+// <ГОТОВЫЕ КЛАССЫ>----------------------------
+.flexbox {
+  display: flex;
+}
+
+.ai-c {
+  align-items: center;
+}
+.ai-s {
+  align-items: flex-start;
+}
+.ai-e {
+  align-items: flex-end;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.none {
+  display: none !important;
+}
+
+//=============================================
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+//=============================================
+
+.bg-cov,
+.bg-con {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.bg-cov {
+  background-size: cover;
+}
+.bg-con {
+  background-size: contain;
+}
+
+// </ГОТОВЫЕ КЛАССЫ>---------------------------
+
+.wrapper {
+}
+
+
+.section {
+  position: relative;
+  .anchor,
+  .btn-anchor {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    top: -150px; // высота шапки
+
+  }
+}
