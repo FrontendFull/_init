@@ -144,19 +144,19 @@ h6,
 
 h1,
 .h1 {
-  font-size: calc( 44px + (88 - 44) * ((100vw - 320px) / (1540 - 320)) );
+  font-size: calc( 32px + (56 - 32) * ((100vw - 320px) / (1540 - 320)) );
   margin-bottom: calc( 15px + (30 - 15) * ((100vw - 320px) / (1540 - 320)) );
 }
 @media (min-width: 1570px) {
   h1,
 .h1 {
-    font-size: 88px;
+    font-size: 56px;
   }
 }
 @media (max-width: 320px) {
   h1,
 .h1 {
-    font-size: 44px;
+    font-size: 32px;
   }
 }
 @media (min-width: 1570px) {
@@ -174,13 +174,13 @@ h1,
 
 h2,
 .h2 {
-  font-size: calc( 24px + (58 - 24) * ((100vw - 320px) / (1540 - 320)) );
+  font-size: calc( 24px + (48 - 24) * ((100vw - 320px) / (1540 - 320)) );
   margin-bottom: calc( 15px + (60 - 15) * ((100vw - 320px) / (1540 - 320)) );
 }
 @media (min-width: 1570px) {
   h2,
 .h2 {
-    font-size: 58px;
+    font-size: 48px;
   }
 }
 @media (max-width: 320px) {
@@ -388,21 +388,62 @@ body .wrapper {
 }
 
 .section {
+  min-height: 100vh;
   position: relative;
+  padding-top: 70px;
 }
 .section .anchor,
 .section .btn-anchor {
   position: absolute;
   pointer-events: none;
   opacity: 0;
-  top: -150px;
+  top: -60px;
 }
 
+.Home {
+  background-color: #321456;
+}
+
+.Main {
+  background-color: #125794;
+}
+
+.About {
+  background-color: #f25794;
+}
+
+.Contact {
+  background-color: #12f794;
+}
+
+.Settings {
+  background-color: #9207f4;
+}
+
+.header {
+  position: fixed;
+  transition: 0.4s;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+}
 .header .menu_list {
-  padding: 30px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
 }
 .header .menu_item {
   padding: 10px;
+}
+.header .menu_item .menu_link {
+  transition: 0.4s;
+  color: #000000;
+}
+.header .menu_item .menu_link.active {
+  color: #ff3333;
+}
+.header.scroll {
+  background-color: #d0d0d0;
 }

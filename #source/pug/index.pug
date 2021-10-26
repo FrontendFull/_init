@@ -4,8 +4,11 @@ include ./components/head.pug
 body
     .wrapper
         include ./components/header.pug
-        section.section
-            .h1 Main Title
+        - arr = [   'Home', 'Main', 'About', 'Contact','Settings']
+        each val,index in arr
+            section.section(class= val)
+                .anchor(id='' + val)
+                .h1= val 
     include ./components/footer.pug
 include ./components/bottom.pug 
            

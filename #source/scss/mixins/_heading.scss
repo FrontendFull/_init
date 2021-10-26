@@ -9,20 +9,18 @@ h4,
 h5,
 .h5,
 h6,
-.h6{
+.h6 {
   text-align: center;
 }
 
-
-
 h1,
 .h1 {
-  @include size(font-size, 88, 44);
+  @include size(font-size, 56, 32);
   @include size(margin-bottom, 30, 15);
 }
 h2,
 .h2 {
-  @include size(font-size, 58, 24);
+  @include size(font-size, 48, 24);
   @include size(margin-bottom, 60, 15);
 }
 h3,

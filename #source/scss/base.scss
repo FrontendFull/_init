@@ -72,15 +72,31 @@ body {
 .wrapper {
 }
 
-
 .section {
+  min-height: 100vh;
   position: relative;
+  padding-top: 70px;
   .anchor,
   .btn-anchor {
     position: absolute;
     pointer-events: none;
     opacity: 0;
-    top: -150px; // высота шапки
-
+    top: -60px; // высота шапки
   }
+}
+
+.Home {
+  background-color: #321456;
+}
+.Main {
+  background-color: #125794;
+}
+.About {
+  background-color: #f25794;
+}
+.Contact {
+  background-color: #12f794;
+}
+.Settings {
+  background-color: #9207f4;
 }
